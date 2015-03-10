@@ -12,33 +12,52 @@ maven, groovy, ant
 
 Javascript
 * env tool: nvm
-* build tool: node (named nodejs on some linux distros)
+  * cached dir: ~/.nvm
+* build tool - package manager: npm
+  * cached dir: ~/.npm
+* build tool - task runner: grunt
+  * 
 * dist tool:
+
+* Javascript interpreter/runtime is named node (nodejs on some linux distros)
 
 Perl
 * env tool: perlbrew
-* build tool: 
+  * cached dir:
+* build tool:
+  * default install dir: ~/perl5
 * dist tool:
+* packages repo: CPAN
 
 Python:
-* env tool: 
-  * easypython
-  * pypy
+* env tool:
+  * pyvenv
+* build tools:
+  * easy_install
+  * pip
+* dist tool:
+* packages repo: PyPi
 
 Ruby:
 * env tool: rbenv
+  * cached dir: ~/.rbenv
 * build tool:
-* dist tool:
+* dist tool: capistrano (???)
 
 Scala
 All in one env+build+dist tools:
-* sbt (written in scala-like dsl and scala)
-  * cached downloads in ~/.ivy2
-  * example file:
+* sbt (written in scala-like dsl and scala, uses Apache Ivy for managing dependencies)
+  * cached dir: ~/.ivy2
+  * config files:
+    * build.sbt
+    * project/*.[sbt|scala]
+  * download dependencies: sbt compile
+  * make dist: sbt dist
   
 * gradle (in groovy)
   * cache dir: ~/.gradle
-  * example file:
+  * example file: build.groovy
   
 * maven (in xml)
   * cache dir: ~/.m2
+  * example file: build.mvn
