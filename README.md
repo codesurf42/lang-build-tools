@@ -1,5 +1,5 @@
 # lang-build-tools
-### Building tools across languages
+### Managing environments and building tools across languages
 
 To sum up some common tools / operations across languages
 
